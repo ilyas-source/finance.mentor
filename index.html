@@ -398,7 +398,7 @@
     }
     .scenarios-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(2, 1fr);
       gap: 24px;
     }
     .scenario-card {
@@ -426,6 +426,18 @@
       border-color: transparent;
     }
     .scenario-card:hover::before { transform: scaleX(1); }
+    .scenario-card.scenario-card-accent {
+      background: linear-gradient(135deg, #f8fbff 0%, #f2f8ff 100%);
+      border-color: #bfdbfe;
+    }
+    .scenario-card.scenario-card-accent::before {
+      transform: scaleX(1);
+      background: linear-gradient(90deg, #60a5fa, #2563eb);
+      opacity: .75;
+    }
+    .scenario-card.scenario-card-accent:hover {
+      border-color: #93c5fd;
+    }
     .scenario-num {
       font-size: 48px;
       font-weight: 800;
@@ -1188,26 +1200,15 @@
           <li>Хочется сравнить опыт и найти точки роста</li>
         </ul>
       </div>
-    </div>
-
-    <!-- ИП-блок -->
-    <div class="ip-highlight fade-up">
-      <div class="ip-highlight-left">
-        <div class="ip-tag">Для IT-специалистов</div>
-        <div class="ip-title">Консультация по ИП</div>
-        <p class="ip-desc">Хочешь увеличить доход, перейти на работу по ИП, взять вторую работу или избежать блокировок со стороны банка — расскажу максимально детально, как не переплатить банкам, бухгалтерам и налоговой и сделать поддержку своего ИП лёгким и ненапряжным</p>
-        <ul class="ip-list">
-          <li>Увеличить доход через дополнительные активности</li>
-          <li>Перейти на работу по ИП</li>
-          <li>Взять вторую работу</li>
-          <li>Избежать блокировок со стороны банка</li>
+      <div class="scenario-card scenario-card-accent fade-up">
+        <div class="scenario-num">04</div>
+        <div class="scenario-title">Растет доход или нужен переход на ИП</div>
+        <ul class="scenario-list">
+          <li>Переход на ИП без лишней боли и переплат</li>
+          <li>Вторая работа без путаницы с налогами</li>
+          <li>Банки, бухгалтерия и налоговая без лишних расходов</li>
+          <li>Как снизить риск блокировок и типовых ошибок</li>
         </ul>
-      </div>
-      <div class="ip-highlight-right">
-        <div class="ip-price-label">Стоимость</div>
-        <div class="ip-price">5 000 <span>₽</span></div>
-        <div class="ip-price-note">разовая консультация</div>
-        <a href="https://t.me/constructorspb" target="_blank" class="btn btn-primary ip-cta">Записаться</a>
       </div>
     </div>
   </div>
