@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Страница не найдена · IT Finance</title>
+  <meta name="robots" content="noindex" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg-page: #F4F2EE;
+      --bg-surface: #FFFFFF;
+      --bg-surface-hover: #F9F8F5;
+      --bg-ink: #15171A;
+      --bg-ink-hover: #272A2F;
+
+      --text-primary: #15171A;
+      --text-secondary: #5D6166;
+      --text-muted: #6C6962;
+      --text-on-ink: #F4F2EE;
+
+      --accent: #B03A2E;
+      --border: #DDD9D1;
+      --border-strong: #C5C0B6;
+
+      --space-0: 0px;
+      --space-75: 8px;
+      --space-100: 12px;
+      --space-200: 16px;
+      --space-300: 24px;
+      --space-400: 32px;
+      --space-600: 48px;
+
+      --radius-lg: 8px;
+      --radius-3xl: 24px;
+
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+      --duration-ui: 300ms;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: var(--space-0);
+      padding: var(--space-0);
+    }
+
+    body {
+      min-height: 100vh;
+      font-family: 'Manrope', system-ui, sans-serif;
+      font-style: normal;
+      background-color: var(--bg-page);
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--space-300);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    .heading-2 {
+      font-size: 48px;
+      line-height: 48px;
+      font-weight: 600;
+      letter-spacing: -0.025em;
+      text-wrap: balance;
+    }
+
+    .title-2 {
+      font-size: 18px;
+      line-height: 28px;
+      font-weight: 500;
+      text-wrap: pretty;
+    }
+
+    .caption-3 {
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .button-md {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 680px;
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-3xl);
+      padding: var(--space-600);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: var(--space-300);
+    }
+
+    .lead {
+      color: var(--text-secondary);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-100);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--space-75);
+      padding: var(--space-75) var(--space-100);
+      border-radius: var(--radius-lg);
+      border: 1px solid transparent;
+      transition:
+        background-color var(--duration-ui) var(--ease),
+        border-color var(--duration-ui) var(--ease),
+        transform var(--duration-ui) var(--ease);
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn-primary {
+      background-color: var(--bg-ink);
+      color: var(--text-on-ink);
+      border-color: var(--bg-ink);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--bg-ink-hover);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background-color: var(--bg-surface);
+      color: var(--text-primary);
+      border-color: var(--border-strong);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--bg-surface-hover);
+      border-color: var(--text-primary);
+      transform: translateY(-2px);
+    }
+
+    .icon-sm {
+      width: 16px;
+      height: 16px;
+      flex-shrink: 0;
+    }
+
+    @media (max-width: 640px) {
+      body {
+        padding: var(--space-200);
+      }
+
+      .heading-2 {
+        font-size: 30px;
+        line-height: 36px;
+      }
+
+      .card {
+        padding: var(--space-300);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <span class="caption-3">IT Finance · Ошибка 404</span>
+    <h1 class="heading-2">Страница не найдена</h1>
+    <p class="title-2 lead">
+      Возможно, ссылка устарела или адрес набран с ошибкой. Карта базы знаний на Boosty, открытые каналы и форматы работы собраны на главной странице.
+    </p>
+    <div class="actions">
+      <a href="/" class="btn btn-primary button-md">
+        <svg class="icon-sm" viewBox="0 0 256 256" fill="none" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <polyline points="160 208 80 128 160 48"></polyline>
+        </svg>
+        Вернуться на главную
+      </a>
+      <a href="https://t.me/it_finances" target="_blank" rel="noopener noreferrer" class="btn btn-secondary button-md">
+        Канал @it_finances
+      </a>
+      <a href="https://boosty.to/itfinance" target="_blank" rel="noopener noreferrer" class="btn btn-secondary button-md">
+        База знаний на Boosty
+      </a>
+    </div>
+  </main>
+</body>
+</html>
